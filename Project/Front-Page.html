@@ -56,8 +56,8 @@
   <div class="row">
     <div class="col-lg-6">
       <h1 class="big-heading">Book any movie anytime with ease.</h1>
-      <button type="button" class="btn btn-dark btn-lg download-button">Login</button>
-      <button type="button" class="btn btn-outline-light btn-lg download-button">Register</button>
+      <button type="button" class="btn btn-dark btn-lg download-button" data-toggle="modal" data-target="#modal-login">Login</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button" data-toggle="modal" data-target = "#modal-signup">Register</button>
     </div>
     <div class="col-lg-6"> 
       <img src="https://img.utdstc.com/icon/ae9/647/ae96479eab0a2b0fcff994ddb49a645cae659d4721244e5d155e00cd1abe10be:200" alt="iphone-mockup" class="img-fluid">
@@ -141,10 +141,8 @@
   <!-- Pricing -->
 
   <!-- <section id="pricing" class="white-section">
-
     <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
-
     <div class="row">
     <div class=" pricing-column col-lg-4 col-md-6"> 
     <div class="card">
@@ -157,7 +155,6 @@
     <p>10 Messages Per Day</p>
     <p>Unlimited App Usage</p>
     <button class="btn btn-lg btn-block btn-outline-dark pricing-button" type="button" >Sign Up</button>
-
       </div>
      
   </div>
@@ -173,7 +170,6 @@
       <p>Unlimited Messages</p>
       <p>Unlimited App Usage</p>
       <button type="button" class="btn btn-lg btn-block btn-dark pricing-button">Sign Up</button>
-
     </div>
    
 </div> 
@@ -190,12 +186,10 @@
     <p>Unlimited Messages</p>
     <p>Unlimited App Usage</p>
     <button type="button" class="btn btn-lg btn-block btn-dark pricing-button">Sign Up</button>
-
   </div>
  
 </div> 
 </div>
-
 </div>
 </section> -->
    
@@ -229,10 +223,99 @@
     <p>© Copyright 2018 TinDog</p>
 
   </footer>
+  
+  
+  <!--Modal Signup-->
+  <div class="modal fade" id="modal-signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-danger" id="exampleModalLabel">SIGNUP</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">User ID</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="UID" name="UID" placeholder="User Id" required>
+                                    <small id="erruid" name="erruid" class="form-text"></small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                               <br><br>
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="UPWD" name="UPWD" placeholder="Password" required>
+                                    <small id="errpwd" name="errpwd" class="form-text"></small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                               <br><br>
+                                <label for="inputmobile" class="col-sm-2 col-form-label">Mobile</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="UMOB" name="UMOB" placeholder="Mobile" required>
+                                    <small id="errmob" name="errmob" class="form-text"></small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputemail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="UMAIL" name="UMAIL" placeholder="Email" required>
+                                    <small id="errmail" name="errmail" class="form-text"></small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-danger" value="Signup" id="signup">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--modal login-->
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                               <br><br>
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="UIDL" name="UIDL" placeholder="Email">
+                                    <small id="errmaill" name="errmaill" class="form-text"></small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="UPWDL" name="UPWDL" placeholder="Password">
+                                    <small id="errpwdl" name="errpwdl" class="form-text"></small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-success" value="Login" id="login">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
 
 
 </body>
 
 </html>
-  
-  

@@ -1,0 +1,27 @@
+.seat-container {
+    border: 5px solid maroon;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+   /overflow: scroll;/
+}
+
+.seat {
+   height: 50px;
+   width: 50px;
+   display: inline-block;
+   border: 4px solid Black;
+   border-radius: 10px;
+   margin: 10px;
+}
+
+.seat-occupied {
+   background-color: DimGray;
+}
+
+.seat-vacant {
+   cursor: pointer;
+}
+
+.seat-hold {
+   background-color: GreenYellow;
+}

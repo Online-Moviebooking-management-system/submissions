@@ -1,0 +1,64 @@
+body{
+  background-color:#f8f9fa!important;
+}
+.navbar-color{
+    background-color: maroon;
+  }
+  .navbar-text{
+    color: white;
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: auto;
+  }
+  .logo{
+      width: 100px;
+      height: 100px;
+      
+  }
+  .Middle{
+      margin-top: 400px;
+      margin-left: 300px;
+  }
+  .add{
+     margin-left: 100px;
+    border-radius: 100%;
+    
+
+  }
+  .round-button{
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-style: groove;
+    color: white;
+    background-color: maroon;
+    border-radius: 100%;
+    overflow: none;
+    text-align: center;
+  }
+
+
+  .btn-grad {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
+  .btn-grad {
+   
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 100%;
+     
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  

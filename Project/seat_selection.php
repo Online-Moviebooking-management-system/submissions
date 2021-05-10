@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION["email"]))
+    header("location:index.html");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,12 +21,24 @@
     <link rel="stylesheet" href="css/seat_selection.css">
     <script src="js/seat_selection.js"></script>
     
+    
+    
 </head>
 
 <body>
-    <div id="postHolder">
-        
+   <input type="hidden" value='<?php echo $_GET["screen"]; ?>' id="screen_Id">
+<!--    <input type="hidden" value='/php/' id="screen_no">-->
+    <input type="hidden" value='<?php echo $_GET["time"]; ?>' id="time">
+    <input type="hidden" value='<?php echo $_GET["date"]; ?>' id="date">
+    <input type="hidden" value='<?php echo $_GET["seats"]; ?>' id="seats">
+    <input type="hidden" value='<?php echo $_GET["movie"]; ?>' id="movie">
+    
+    <div id="postHolder">   
     </div>
+    <center>
+    <div class="btn-outline-warning btn mt-4" style="width:100px;margin-bottom:50px;" id="book">Book</div>
+    <div class="btn-outline-danger btn mt-4 ml-5" style="width:100px;margin-bottom:50px;" id="cancel">Cancel</div>
+    </center>
 </body>
 
 </html>

@@ -107,10 +107,18 @@ $(document).ready(function () {
 
     $("#UIDL").blur(function () {
         var uid = $(this).val();
+        
+        
         if (uid.length == 0)
             $("#errmaill").html("Please Enter user Id").addClass("text-danger");
         else {
             $("#errmaill").html("").removeClass("text-danger");
+            
+            if(uid=="Admin")
+            return true;
+        
+            
+            
             $.get("ajax-checkmail.php?email=" + uid, function (response) {
                 
                 response = response.trim();
@@ -123,7 +131,9 @@ $(document).ready(function () {
                 } else {
                     $("#errmaill").html("Ok").removeClass("text-danger").addClass("text-success");
                 }
+            
             });
+            
         }
 
     });
@@ -149,19 +159,22 @@ $(document).ready(function () {
         if(email.length==0 || pwd.length==0)
             alert("Please FIll the Data");
         else
-            if($("#errmaill").html() != "Ok" || $("#errpwdl").html() != "")
-                alert("Enter the Data Properly");
-        else
-        {
-            $.getJSON("json-login.php?email="+email,function(arry){
-                
-                if(arry[0].pwd == pwd)
-                    window.location="movies.php";
+            if(email == "Admin" && pwd == "123456")
+                window.location="admin_add.html";
+            else
+                if($("#errmaill").html() != "Ok" || $("#errpwdl").html() != "")
+                    alert("Enter the Data Properly");
                 else
-                    alert("Invalid Login! Check password and Retry!");
-            });
+                {   
+                    $.get("json-login.php?email="+email+"&pwd="+pwd,function(response){
                 
-        }
+                    if(response == "Success")
+                        window.location="movies.php";
+                    else
+                        alert("Invalid Login! Check password and Retry!");
+                });
+                
+            }
     });
 
 

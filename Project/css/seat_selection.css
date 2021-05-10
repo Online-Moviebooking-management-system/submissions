@@ -1,17 +1,35 @@
+body
+{
+    background-color: #1b1717;
+}
+.ti
+{
+    height: 350px;
+    background-size: 100% 100%;
+    margin-bottom: 50px;
+    background-color: #ce1212;
+    
+}
 .seat-container {
-    border: 5px solid maroon;
+    border: 5px solid;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    /overflow: scroll;/
+    width:600px;
+    height: 600px;
+    background-color: #eeebdd;
 }
 
+
 .seat {
+    
    height: 50px;
    width: 50px;
-   display: inline-block;
    border: 4px solid Black;
    border-radius: 10px;
-   margin: 10px;
+   margin: auto;
+    
+    
 }
 
 .seat-occupied {

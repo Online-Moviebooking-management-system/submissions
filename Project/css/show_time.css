@@ -1,0 +1,81 @@
+.pad{
+    padding: 0;
+}
+
+.navbar-heading{
+    color: white;
+    font-weight: bolder;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin-bottom: 2px;
+}
+.navbar-pad{
+ 
+   background-color: black;
+}
+  #title{
+      background-color:#ce1212 ;
+      height: 40%;
+      padding: 2%;
+  }
+  .movie-image{
+      width: 330px;
+      height: 375px;
+      margin: 10%;
+      margin-right: 2%;
+      margin-top: 50px;
+      padding-top: 5%;
+      border-radius: 8%;  
+  }
+  .big-heading{
+      padding: 20% 2% 2% 20%;
+      color: white;
+      font-size: 2rem;
+  }
+  .date-carousel {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    height: 0.5in;
+    margin: auto;
+    position: relative;
+    width:3in;
+  }
+  
+  .date-carousel-next,
+  .date-carousel-prev,
+  .date-carousel-input {
+    box-sizing: border-box;
+    position:relative;
+    border: none;
+  }
+  .date-carousel-next,
+.date-carousel-prev {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bold;
+  width: 0.5in;
+}
+
+.date-carousel-input {
+  color: black;
+  background-color: transparent;
+  text-align: center;
+  width: 3in;
+  font-size: 1.5rem;
+}
+
+/* Disable Native UI */
+
+.date-carousel-input::-webkit-inner-spin-button,
+.date-carousel-input::-webkit-input-placeholder{
+    display: none;
+    -webkit-appearance: none;
+}
+.card-width{
+    width: 40%;
+}
